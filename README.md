@@ -38,7 +38,7 @@ A record of the updates is kept in `update_log.txt`.
 
 We've downloaded GHCN data to:
 ```
-/g/data/ia39/aus-ref-clim-data-nci/ghcn/data/daily/by_year
+/g/data/jt48/aus-ref-clim-data-nci/ghcn/data/daily/by_year
 ```
 
 The files are ascii format: `YYYY.csv`
