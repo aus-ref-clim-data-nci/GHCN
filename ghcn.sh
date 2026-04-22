@@ -34,7 +34,7 @@
 # 2022-04-12 - remove replica folder and introduce $AUSREFDIR
 #
 
-root_dir=${AUSREFDIR:-/g/data/ia39/aus-ref-clim-data-nci}
+root_dir=${AUSREFDIR:-/g/data/jt48/aus-ref-clim-data-nci}
 cd ${root_dir}/ghcn/data/daily/by_year/
 today=$(date "+%Y-%m-%d")
 # using wget as we are currently only downloading from one folder
@@ -45,5 +45,5 @@ mv *.csv previous/.
 gunzip *.gz
 mv *.txt ${root_dir}/ghcn/data/.
 mv wget-log ${root_dir}/ghcn/code/.
+rm *.gz
 echo "${today} updated by $USER" >> ${root_dir}/ghcn/code/update_log.txt
-
